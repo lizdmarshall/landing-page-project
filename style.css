@@ -6,6 +6,11 @@
   /* font-family: Roboto, sans-serif; */
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   height: 100vh;
   font-family: Roboto, sans-serif;
@@ -14,15 +19,12 @@ body {
   flex: 1;
 }
 .top-bar {
-  background-color: #1F2937;
-  color: #F9FAF8;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .header {
-  font-family: Roboto, sans-serif;
   background-color: #1F2937;
   color: hotpink;
   font-size: 18px;
@@ -30,50 +32,140 @@ body {
   flex-direction: column;
 }
 
+.top-container {
+  display: flex;
+  gap: 30px;
+  margin: 30px 60px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #F9FAF8;
+}
+
 img {
-  max-width: 250px;
+  max-width: 200px;
   height: auto;
 }
+
 ul {
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 10px;
+  gap: 10px;
 }
 
 .header-logo {
   color: #F9FAF8;
   font-size: 24px;
+  /* padding: 10px; */
 }
 
 .header-main-text {
   font-size: 48px;
+  color: hotpink;
 }
 
 .random-information {
-  font-size: 36px;
   color: #1F2937;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.cat-title {
+  font-size: 36px;
   font-weight: bolder;
+  color: #1F2937;
+}
+
+.cat-container {
+  display: flex;
+  gap: 30px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info > img {
+  width: 200px;
+  height: 200px;
+  border: 3px solid #3882f6;
+  border-radius: 25px;
+  
 }
 
 .quote-section {
+  display: flex;
+  flex-direction: column;
   background-color: #E5E7EB;
   font-size: 36px;
   font-style: italic;
-  font-weight: 100px;
+  font-weight: lighter;
+  padding: 40px 0;
+}
 
+span {
+  display: flex;
+  align-self: flex-end;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 24px;
+  margin-top: 0;
+  margin-right: 25%;
+}
+
+.quote-section > p {
+  margin: 0 25%;
+}
+
+.call-to-action {
+  display: flex;
+  justify-content: center;
+}
+
+.modal {
+  display: flex;
+  background-color: #3882f6;
+  flex-direction: row;
+  padding: 40px;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.call-to-header {
+  font-size: 24px;
+  color: #F9FAF8;
+}
+
+.container > .text {
+  color: #E5E7EB;
 }
 
 button {
-  color: hotpink;
+  background-color: #3882f6;
+  color: #F9FAF8
 }
 
 .footer {
   height: 85px;
   background-color: #1F2937;
   color: #F9FAF8;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 25px;
 
 }
